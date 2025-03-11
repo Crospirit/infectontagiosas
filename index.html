@@ -85,289 +85,267 @@
 </head>
 <body>
 
-<div class="container">
-    <h1>Cuestionario de Prevención no Transporte Sanitario</h1>
+    <div class="container">
+        <h1>Cuestionario de Prevención no Transporte Sanitario</h1>
+        <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <p>1. ¿Cal é o principal modo de transmisión do COVID-19?</p>
+                <label><input type="radio" name="q1" value="a"> Contacto directo</label><br>
+                <label><input type="radio" name="q1" value="b"> Gotículas respiratorias</label><br>
+                <label><input type="radio" name="q1" value="c"> Aerosois</label><br>
+                <label><input type="radio" name="q1" value="d"> Vectores</label><br>
+                <label><input type="radio" name="q1" value="e"> Todas as anteriores</label>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <p>2. ¿Cal é a duración recomendada do lavado de mans segundo a OMS?</p>
+                <label><input type="radio" name="q2" value="a"> 10 segundos</label><br>
+                <label><input type="radio" name="q2" value="b"> 20-30 segundos</label><br>
+                <label><input type="radio" name="q2" value="c"> 1 minuto</label><br>
+                <label><input type="radio" name="q2" value="d"> 2 minutos</label><br>
+                <label><input type="radio" name="q2" value="e"> Non é necesario</label>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <p>3. ¿Cal é o principal risco nas ambulancias durante a pandemia de COVID-19?</p>
+                <label><input type="radio" name="q3" value="a"> Espazo reducido</label><br>
+                <label><input type="radio" name="q3" value="b"> Falta de ventilación</label><br>
+                <label><input type="radio" name="q3" value="c"> Pacientes asintomáticos</label><br>
+                <label><input type="radio" name="q3" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q3" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <p>4. ¿Cal é o principal reservorio do virus da COVID-19?</p>
+                <label><input type="radio" name="q4" value="a"> Animais</label><br>
+                <label><input type="radio" name="q4" value="b"> Ser humano</label><br>
+                <label><input type="radio" name="q4" value="c"> Ambiente</label><br>
+                <label><input type="radio" name="q4" value="d"> Auga contaminada</label><br>
+                <label><input type="radio" name="q4" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <p>5. ¿Cal é a principal porta de saída do virus da COVID-19?</p>
+                <label><input type="radio" name="q5" value="a"> Respiratoria</label><br>
+                <label><input type="radio" name="q5" value="b"> Dixestiva</label><br>
+                <label><input type="radio" name="q5" value="c"> Cutánea</label><br>
+                <label><input type="radio" name="q5" value="d"> Xenitourinaria</label><br>
+                <label><input type="radio" name="q5" value="e"> Todas as anteriores</label>
+            </div>
+            <!-- Pregunta 6 -->
+            <div class="question">
+                <p>6. ¿Cal é o principal modo de transmisión da tuberculose?</p>
+                <label><input type="radio" name="q6" value="a"> Contacto directo</label><br>
+                <label><input type="radio" name="q6" value="b"> Gotículas</label><br>
+                <label><input type="radio" name="q6" value="c"> Aerosois</label><br>
+                <label><input type="radio" name="q6" value="d"> Vectores</label><br>
+                <label><input type="radio" name="q6" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 7 -->
+            <div class="question">
+                <p>7. ¿Cal é o principal factor de risco individual para as enfermidades infecciosas?</p>
+                <label><input type="radio" name="q7" value="a"> Idade</label><br>
+                <label><input type="radio" name="q7" value="b"> Inmunodepresión</label><br>
+                <label><input type="radio" name="q7" value="c"> Enfermidades crónicas</label><br>
+                <label><input type="radio" name="q7" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q7" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 8 -->
+            <div class="question">
+                <p>8. ¿Cal é o principal risco do uso prolongado de luvas?</p>
+                <label><input type="radio" name="q8" value="a"> Dermatite de contacto</label><br>
+                <label><input type="radio" name="q8" value="b"> Alerxias</label><br>
+                <label><input type="radio" name="q8" value="c"> Hipersensibilidade</label><br>
+                <label><input type="radio" name="q8" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q8" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 9 -->
+            <div class="question">
+                <p>9. ¿Cal é o principal obxectivo da vacinación?</p>
+                <label><input type="radio" name="q9" value="a"> Previr enfermidades</label><br>
+                <label><input type="radio" name="q9" value="b"> Reducir a transmisión</label><br>
+                <label><input type="radio" name="q9" value="c"> Protexer aos grupos de risco</label><br>
+                <label><input type="radio" name="q9" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q9" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 10 -->
+            <div class="question">
+                <p>10. ¿Cal é o principal obxectivo da desinfección de superficies?</p>
+                <label><input type="radio" name="q10" value="a"> Reducir a carga microbiana</label><br>
+                <label><input type="radio" name="q10" value="b"> Previr a propagación de patóxenos</label><br>
+                <label><input type="radio" name="q10" value="c"> Protexer ao persoal sanitario</label><br>
+                <label><input type="radio" name="q10" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q10" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 11 -->
+            <div class="question">
+                <p>11. ¿Cal é o principal risco dos aerosois en espazos pechados?</p>
+                <label><input type="radio" name="q11" value="a"> Transmisión de enfermidades</label><br>
+                <label><input type="radio" name="q11" value="b"> Falta de ventilación</label><br>
+                <label><input type="radio" name="q11" value="c"> Exposición a patóxenos</label><br>
+                <label><input type="radio" name="q11" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q11" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 12 -->
+            <div class="question">
+                <p>12. ¿Cal é o principal obxectivo da educación en hixiene?</p>
+                <label><input type="radio" name="q12" value="a"> Reducir a transmisión de enfermidades</label><br>
+                <label><input type="radio" name="q12" value="b"> Promover prácticas seguras</label><br>
+                <label><input type="radio" name="q12" value="c"> Protexer aos grupos de risco</label><br>
+                <label><input type="radio" name="q12" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q12" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 13 -->
+            <div class="question">
+                <p>13. ¿Cal é a principal vía de transmisión da sarna?</p>
+                <label><input type="radio" name="q13" value="a"> Contacto directo prolongado</label><br>
+                <label><input type="radio" name="q13" value="b"> Aerosois</label><br>
+                <label><input type="radio" name="q13" value="c"> Gotículas</label><br>
+                <label><input type="radio" name="q13" value="d"> Contacto con superficies</label><br>
+                <label><input type="radio" name="q13" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 14 -->
+            <div class="question">
+                <p>14. ¿Que tipo de illamento require un paciente con tuberculose pulmonar activa?</p>
+                <label><input type="radio" name="q14" value="a"> Illamento de contacto</label><br>
+                <label><input type="radio" name="q14" value="b"> Illamento aéreo</label><br>
+                <label><input type="radio" name="q14" value="c"> Illamento por gotas</label><br>
+                <label><input type="radio" name="q14" value="d"> Ningún illamento especial</label><br>
+                <label><input type="radio" name="q14" value="e"> Todas as anteriores</label>
+            </div>
+            <!-- Pregunta 15 -->
+            <div class="question">
+                <p>15. ¿Que tipo de máscara debe utilizar o persoal sanitario ao atender a un paciente con tuberculose pulmonar activa?</p>
+                <label><input type="radio" name="q15" value="a"> Máscara cirúrxica</label><br>
+                <label><input type="radio" name="q15" value="b"> Máscara FFP2/FFP3</label><br>
+                <label><input type="radio" name="q15" value="c"> Máscara de tea</label><br>
+                <label><input type="radio" name="q15" value="d"> Ningunha máscara</label><br>
+                <label><input type="radio" name="q15" value="e"> Todas as anteriores</label>
+            </div>
+            <!-- Pregunta 16 -->
+            <div class="question">
+                <p>16. ¿Que medida é fundamental para a prevención da COVID-19 en ambulancias?</p>
+                <label><input type="radio" name="q16" value="a"> Lavado de mans frecuente</label><br>
+                <label><input type="radio" name="q16" value="b"> Uso de EPIs axeitados</label><br>
+                <label><input type="radio" name="q16" value="c"> Ventilación da ambulancia</label><br>
+                <label><input type="radio" name="q16" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q16" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 17 -->
+            <div class="question">
+                <p>17. Segundo a OMS, ¿cantos pasos ten o proceso correcto de lavado de mans?</p>
+                <label><input type="radio" name="q17" value="a"> 3</label><br>
+                <label><input type="radio" name="q17" value="b"> 5</label><br>
+                <label><input type="radio" name="q17" value="c"> 7</label><br>
+                <label><input type="radio" name="q17" value="d"> 8</label><br>
+                <label><input type="radio" name="q17" value="e"> 11</label>
+            </div>
+            <!-- Pregunta 18 -->
+            <div class="question">
+                <p>18. ¿Cando se debe realizar a hixiene de mans segundo a OMS?</p>
+                <label><input type="radio" name="q18" value="a"> Antes de tocar ao paciente</label><br>
+                <label><input type="radio" name="q18" value="b"> Despois de tocar ao paciente</label><br>
+                <label><input type="radio" name="q18" value="c"> Antes dun procedemento aséptico</label><br>
+                <label><input type="radio" name="q18" value="d"> Todas as anteriores</label><br>
+                <label><input type="radio" name="q18" value="e"> Ningunha das anteriores</label>
+            </div>
+            <!-- Pregunta 19 -->
+            <div class="question">
+                <p>19. ¿Que tipo de illamento require un gran queimado?</p>
+                <label><input type="radio" name="q19" value="a"> Illamento estrito</label><br>
+                <label><input type="radio" name="q19" value="b"> Illamento por contacto</label><br>
+                <label><input type="radio" name="q19" value="c"> Illamento aéreo</label><br>
+                <label><input type="radio" name="q19" value="d"> Ningún illamento</label><br>
+                <label><input type="radio" name="q19" value="e"> Todas as anteriores</label>
+            </div>
+            <!-- Pregunta 20 -->
+            <div class="question">
+                <p>20. ¿Cantos segundos debe durar a fricción con solución hidroalcohólica segundo a OMS?</p>
+                <label><input type="radio" name="q20" value="a"> 10 segundos</label><br>
+                <label><input type="radio" name="q20" value="b"> 20-30 segundos</label><br>
+                <label><input type="radio" name="q20" value="c"> 1 minuto</label><br>
+                <label><input type="radio" name="q20" value="d"> 5 minutos</label><br>
+                <label><input type="radio" name="q20" value="e"> Non é necesario</label>
+            </div>
+            <div id="score" class="score"></div>
+            <button type="button" id="submitBtn" onclick="calcularCalificacion()">Corrixir</button>
+        </form>
+        <div id="falladas" style="margin-top: 20px; background-color: #f9f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1);"></div>
+    </div>
+    <script>
+        // Impide o menú contextual
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
 
-    <form id="quizForm">
-        <!-- Pregunta 1 -->
-        <div class="question">
-            <p>1. ¿Cal é a principal causa das enfermidades infecciosas?</p>
-            <label><input type="radio" name="q1" value="a"> Virus</label>
-            <label><input type="radio" name="q1" value="b"> Bacterias</label>
-            <label><input type="radio" name="q1" value="c"> Fungos</label>
-            <label><input type="radio" name="q1" value="d"> Parásitos</label>
-            <label><input type="radio" name="q1" value="e"> Todas as anteriores</label>
-        </div>
+        let cuestionarioCorregido = false;
 
-        <!-- Pregunta 2 -->
-        <div class="question">
-            <p>2. ¿Cal é o principal modo de transmisión do COVID-19?</p>
-            <label><input type="radio" name="q2" value="a"> Contacto directo</label>
-            <label><input type="radio" name="q2" value="b"> Gotículas respiratorias</label>
-            <label><input type="radio" name="q2" value="c"> Aerosois</label>
-            <label><input type="radio" name="q2" value="d"> Vectores</label>
-            <label><input type="radio" name="q2" value="e"> Todas as anteriores</label>
-        </div>
-
-        <!-- Pregunta 3 -->
-        <div class="question">
-            <p>3. ¿Cal é a duración recomendada do lavado de mans segundo a OMS?</p>
-            <label><input type="radio" name="q3" value="a"> 10 segundos</label>
-            <label><input type="radio" name="q3" value="b"> 20-30 segundos</label>
-            <label><input type="radio" name="q3" value="c"> 1 minuto</label>
-            <label><input type="radio" name="q3" value="d"> 2 minutos</label>
-            <label><input type="radio" name="q3" value="e"> Non é necesario</label>
-        </div>
-
-        <!-- Pregunta 4 -->
-        <div class="question">
-            <p>4. ¿Cal é o tipo de máscara recomendada para o persoal sanitario en situacións de alto risco?</p>
-            <label><input type="radio" name="q4" value="a"> Máscara cirúrxica</label>
-            <label><input type="radio" name="q4" value="b"> Máscara FFP2</label>
-            <label><input type="radio" name="q4" value="c"> Máscara de tea</label>
-            <label><input type="radio" name="q4" value="d"> Máscara KN95</label>
-            <label><input type="radio" name="q4" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 5 -->
-        <div class="question">
-            <p>5. ¿Cal é o principal risco nas ambulancias durante a pandemia de COVID-19?</p>
-            <label><input type="radio" name="q5" value="a"> Espazo reducido</label>
-            <label><input type="radio" name="q5" value="b"> Falta de ventilación</label>
-            <label><input type="radio" name="q5" value="c"> Pacientes asintomáticos</label>
-            <label><input type="radio" name="q5" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q5" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 6 -->
-        <div class="question">
-            <p>6. ¿Cal é o principal obxectivo da cadea epidemiolóxica?</p>
-            <label><input type="radio" name="q6" value="a"> Identificar o patóxeno</label>
-            <label><input type="radio" name="q6" value="b"> Romper a transmisión</label>
-            <label><input type="radio" name="q6" value="c"> Aillamento do paciente</label>
-            <label><input type="radio" name="q6" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q6" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 7 -->
-        <div class="question">
-            <p>7. ¿Cal é o principal reservorio do virus da COVID-19?</p>
-            <label><input type="radio" name="q7" value="a"> Animais</label>
-            <label><input type="radio" name="q7" value="b"> Ser humano</label>
-            <label><input type="radio" name="q7" value="c"> Ambiente</label>
-            <label><input type="radio" name="q7" value="d"> Auga contaminada</label>
-            <label><input type="radio" name="q7" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 8 -->
-        <div class="question">
-            <p>8. ¿Cal é a principal porta de saída do virus da COVID-19?</p>
-            <label><input type="radio" name="q8" value="a"> Respiratoria</label>
-            <label><input type="radio" name="q8" value="b"> Dixestiva</label>
-            <label><input type="radio" name="q8" value="c"> Cutánea</label>
-            <label><input type="radio" name="q8" value="d"> Xenitourinaria</label>
-            <label><input type="radio" name="q8" value="e"> Todas as anteriores</label>
-        </div>
-
-        <!-- Pregunta 9 -->
-        <div class="question">
-            <p>9. ¿Cal é o principal modo de transmisión da tuberculose?</p>
-            <label><input type="radio" name="q9" value="a"> Contacto directo</label>
-            <label><input type="radio" name="q9" value="b"> Gotículas</label>
-            <label><input type="radio" name="q9" value="c"> Aerosois</label>
-            <label><input type="radio" name="q9" value="d"> Vectores</label>
-            <label><input type="radio" name="q9" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 10 -->
-        <div class="question">
-            <p>10. ¿Cal é o principal factor de risco individual para as enfermidades infecciosas?</p>
-            <label><input type="radio" name="q10" value="a"> Idade</label>
-            <label><input type="radio" name="q10" value="b"> Inmunodepresión</label>
-            <label><input type="radio" name="q10" value="c"> Enfermidades crónicas</label>
-            <label><input type="radio" name="q10" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q10" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 11 -->
-        <div class="question">
-            <p>11. ¿Cal é o principal método de prevención das enfermidades infecciosas?</p>
-            <label><input type="radio" name="q11" value="a"> Vacinación</label>
-            <label><input type="radio" name="q11" value="b"> Lavado de mans</label>
-            <label><input type="radio" name="q11" value="c"> Uso de EPIs</label>
-            <label><input type="radio" name="q11" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q11" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 12 -->
-        <div class="question">
-            <p>12. ¿Cal é o principal risco do uso prolongado de luvas?</p>
-            <label><input type="radio" name="q12" value="a"> Dermatite de contacto</label>
-            <label><input type="radio" name="q12" value="b"> Alerxias</label>
-            <label><input type="radio" name="q12" value="c"> Hipersensibilidade</label>
-            <label><input type="radio" name="q12" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q12" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 13 -->
-        <div class="question">
-            <p>13. ¿Cal é o principal obxectivo do illamento protector?</p>
-            <label><input type="radio" name="q13" value="a"> Protexer ao paciente</label>
-            <label><input type="radio" name="q13" value="b"> Protexer ao persoal sanitario</label>
-            <label><input type="radio" name="q13" value="c"> Evitar a propagación da enfermidade</label>
-            <label><input type="radio" name="q13" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q13" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 14 -->
-        <div class="question">
-            <p>14. ¿Cal é o principal método de desinfección en ambulancias?</p>
-            <label><input type="radio" name="q14" value="a"> Alcohol 70%</label>
-            <label><input type="radio" name="q14" value="b"> Leixía diluída</label>
-            <label><input type="radio" name="q14" value="c"> Toalliñas desinfectantes</label>
-            <label><input type="radio" name="q14" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q14" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 15 -->
-        <div class="question">
-            <p>15. ¿Cal é o principal risco dos residuos sanitarios biocontaminados?</p>
-            <label><input type="radio" name="q15" value="a"> Risco biolóxico</label>
-            <label><input type="radio" name="q15" value="b"> Risco químico</label>
-            <label><input type="radio" name="q15" value="c"> Risco radiolóxico</label>
-            <label><input type="radio" name="q15" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q15" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 16 -->
-        <div class="question">
-            <p>16. ¿Cal é o principal obxectivo da vacinación?</p>
-            <label><input type="radio" name="q16" value="a"> Previr enfermidades</label>
-            <label><input type="radio" name="q16" value="b"> Reducir a transmisión</label>
-            <label><input type="radio" name="q16" value="c"> Protexer aos grupos de risco</label>
-            <label><input type="radio" name="q16" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q16" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 17 -->
-        <div class="question">
-            <p>17. ¿Cal é o principal risco do uso incorrecto de EPIs?</p>
-            <label><input type="radio" name="q17" value="a"> Exposición a patóxenos</label>
-            <label><input type="radio" name="q17" value="b"> Contaminación cruzada</label>
-            <label><input type="radio" name="q17" value="c"> Infeccións nosocomiais</label>
-            <label><input type="radio" name="q17" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q17" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 18 -->
-        <div class="question">
-            <p>18. ¿Cal é o principal obxectivo da desinfección de superficies?</p>
-            <label><input type="radio" name="q18" value="a"> Reducir a carga microbiana</label>
-            <label><input type="radio" name="q18" value="b"> Previr a propagación de patóxenos</label>
-            <label><input type="radio" name="q18" value="c"> Protexer ao persoal sanitario</label>
-            <label><input type="radio" name="q18" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q18" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 19 -->
-        <div class="question">
-            <p>19. ¿Cal é o principal risco dos aerosois en espazos pechados?</p>
-            <label><input type="radio" name="q19" value="a"> Transmisión de enfermidades</label>
-            <label><input type="radio" name="q19" value="b"> Falta de ventilación</label>
-            <label><input type="radio" name="q19" value="c"> Exposición a patóxenos</label>
-            <label><input type="radio" name="q19" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q19" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <!-- Pregunta 20 -->
-        <div class="question">
-            <p>20. ¿Cal é o principal obxectivo da educación en hixiene?</p>
-            <label><input type="radio" name="q20" value="a"> Reducir a transmisión de enfermidades</label>
-            <label><input type="radio" name="q20" value="b"> Promover prácticas seguras</label>
-            <label><input type="radio" name="q20" value="c"> Protexer aos grupos de risco</label>
-            <label><input type="radio" name="q20" value="d"> Todas as anteriores</label>
-            <label><input type="radio" name="q20" value="e"> Ningunha das anteriores</label>
-        </div>
-
-        <div id="score" class="score"></div>
-        <button type="button" id="submitBtn" onclick="calcularCalificacion()">Correxir</button>
-    </form>
-</div>
-
-<div id="falladas" style="margin-top: 20px; background-color: #f9f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1);"></div>
-
-<script>
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-
-    let cuestionarioCorregido = false;
-
-    function calcularCalificacion() {
-        if (cuestionarioCorregido) {
-            alert("Xa corrixiches o cuestionario. Recarga a páxina para tentar de novo.");
-            return;
-        }
-
-        const respuestasCorrectas = {
-            "q1": "e",
-            "q2": "b",
-            "q3": "b",
-            "q4": "b",
-            "q5": "d",
-            "q6": "b",
-            "q7": "b",
-            "q8": "a",
-            "q9": "c",
-            "q10": "d",
-            "q11": "d",
-            "q12": "d",
-            "q13": "d",
-            "q14": "d",
-            "q15": "a",
-            "q16": "d",
-            "q17": "d",
-            "q18": "d",
-            "q19": "d",
-            "q20": "d"
-        };
-
-        let totalPreguntas = 20;
-        let puntaje = 0;
-        let preguntasFalladas = [];
-
-        for (let pregunta in respuestasCorrectas) {
-            let seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
-            if (seleccionada && seleccionada.value === respuestasCorrectas[pregunta]) {
-                puntaje++;
-            } else {
-                preguntasFalladas.push("Pregunta " + pregunta.replace("q", ""));
+        function calcularCalificacion() {
+            if (cuestionarioCorregido) {
+                alert("Xa corrixiches o cuestionario. Recarga a páxina para tentar de novo.");
+                return;
             }
-        }
 
-        document.getElementById("score").innerText = `Resultado: ${puntaje}/${totalPreguntas}`;
-        
-        let falladasDiv = document.getElementById("falladas");
-        falladasDiv.innerHTML = "";
-        
-        if (preguntasFalladas.length > 0) {
-            falladasDiv.innerHTML = `
-                <h3 style="color: red;">Preguntas Erróneas:</h3>
-                <ul style="list-style: none; padding: 0;">
-                    ${preguntasFalladas.map(p => `<li style="color: #FF4500; font-weight: bold;">${p}</li>`).join("")}
-                </ul>
-            `;
-        } else {
-            falladasDiv.innerHTML = `
-                <h3 style="color: green;">¡Perfecto!</h3>
-                <p style="color: #4CAF50; font-weight: bold;">Todas as respostas correctas.</p>
-            `;
-        }
+            const respuestasCorrectas = {
+                "q1": "b",
+                "q2": "b",
+                "q3": "d",
+                "q4": "b",
+                "q5": "a",
+                "q6": "c",
+                "q7": "d",
+                "q8": "d",
+                "q9": "d",
+                "q10": "d",
+                "q11": "d",
+                "q12": "d",
+                "q13": "a",
+                "q14": "b",
+                "q15": "b",
+                "q16": "d",
+                "q17": "c",
+                "q18": "d",
+                "q19": "a",
+                "q20": "b"
+            };
 
-        cuestionarioCorregido = true;
-        document.getElementById("submitBtn").disabled = true;
-    }
-</script>
+            let totalPreguntas = 20;
+            let puntaje = 0;
+            let preguntasFalladas = [];
+
+            for (let pregunta in respuestasCorrectas) {
+                let seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+                if (seleccionada && seleccionada.value === respuestasCorrectas[pregunta]) {
+                    puntaje++;
+                } else {
+                    preguntasFalladas.push("Pregunta " + pregunta.replace("q", ""));
+                }
+            }
+
+            document.getElementById("score").innerText = `Resultado: ${puntaje}/${totalPreguntas}`;
+
+            let falladasDiv = document.getElementById("falladas");
+            falladasDiv.innerHTML = "";
+
+            if (preguntasFalladas.length > 0) {
+                falladasDiv.innerHTML = `
+                    <h3 style="color: red;">Preguntas Erróneas:</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        ${preguntasFalladas.map(p => `<li style="color: #FF4500; font-weight: bold;">${p}</li>`).join("")}
+                    </ul>
+                `;
+            } else {
+                falladasDiv.innerHTML = `
+                    <h3 style="color: green;">¡Perfecto!</h3>
+                    <p style="color: #4CAF50; font-weight: bold;">Todas as respostas correctas.</p>
+                `;
+            }
+
+            cuestionarioCorregido = true;
+            document.getElementById("submitBtn").disabled = true;
+        }
+    </script>
 
 <footer>
     <p>Elaborado por Eloy Díaz</p>
