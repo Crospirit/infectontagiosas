@@ -1,216 +1,292 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Cuestionario TES</title>
+    <title>Cuestionario de Prevención no Transporte Sanitario</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 20px;
-        font-size: 16px; /* Tamaño base de la fuente */
-        -webkit-user-select: none; /* Safari */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Standard */
-    }
-    h1 {
-        text-align: center;
-        color: #FF4500; /* Color naranja para el título */
-        font-size: 36px; /* Tamaño de fuente más grande para el título */
-        font-weight: bold;
-        text-shadow: 2px 2px #FFD700; /* Sombra para el título */
-    }
-    .container {
-        max-width: 800px;
-        margin: auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        word-wrap: break-word; /* Ajusta el texto largo */
-        word-break: break-word; /* Ajusta el texto largo */
-    }
-    .question {
-        margin-bottom: 20px;
-    }
-    .question p {
-        font-size: 1.1rem; /* Tamaño de fuente uniforme */
-        font-weight: bold;
-        color: #6582BC; /* Azul cielo oscuro */
-    }
-    .question label {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 1rem; /* Tamaño de fuente ajustado */
-        cursor: pointer;
-    }
-    #submitBtn {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        font-size: 18px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-    #submitBtn:hover {
-        background-color: #45a049;
-    }
-    .score {
-        margin-top: 20px;
-        font-size: 20px;
-        font-weight: bold;
-        color: #333;
-    }
-    footer {
-        text-align: center;
-        margin-top: 20px;
-        font-size: 14px;
-        color: #666;
-    }
-
-    /* Aumentar ligeramente el tamaño de fuente para pantallas más pequeñas (móviles) */
-    @media (max-width: 600px) {
-        .question p {
-            font-size: 1.25rem; /* Ajusta el tamaño de la fuente en móviles */
-        }
         body {
-            font-size: 1.1rem; /* Ajuste global para móviles */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            font-size: 16px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-    }
-</style>
+        h1 {
+            text-align: center;
+            color: #FF4500;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px #FFD700;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #6582BC;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        #submitBtn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #submitBtn:hover {
+            background-color: #45a049;
+        }
+        .score {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            .question p {
+                font-size: 1.25rem;
+            }
+            body {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Cuestionario de Osixenoterapia </h1>
+    <h1>Cuestionario de Prevención no Transporte Sanitario</h1>
 
     <form id="quizForm">
         <!-- Pregunta 1 -->
         <div class="question">
-            <p>1. ¿Cal é a concentración máxima de O₂ que se pode acadar cunha cánula nasal a 6 L/min?</p>
-            <label><input type="radio" name="q1" value="a"> 24%</label>
-            <label><input type="radio" name="q1" value="b"> 36%</label>
-            <label><input type="radio" name="q1" value="c"> 44%</label>
-            <label><input type="radio" name="q1" value="d"> 60%</label>
-            <label><input type="radio" name="q1" value="e"> 90%</label>
+            <p>1. ¿Cal é a principal causa das enfermidades infecciosas?</p>
+            <label><input type="radio" name="q1" value="a"> Virus</label>
+            <label><input type="radio" name="q1" value="b"> Bacterias</label>
+            <label><input type="radio" name="q1" value="c"> Fungos</label>
+            <label><input type="radio" name="q1" value="d"> Parásitos</label>
+            <label><input type="radio" name="q1" value="e"> Todas as anteriores</label>
         </div>
 
         <!-- Pregunta 2 -->
         <div class="question">
-            <p>2. ¿Cal é o dispositivo recomendado para pacientes con EPOC e risco de retención de CO₂?</p>
-            <label><input type="radio" name="q2" value="a"> Cánula nasal a alto fluxo</label>
-            <label><input type="radio" name="q2" value="b"> Máscara con reservorio</label>
-            <label><input type="radio" name="q2" value="c"> Máscara Venturi</label>
-            <label><input type="radio" name="q2" value="d"> Carpa de osíxeno</label>
-            <label><input type="radio" name="q2" value="e"> Máscara de aerosol</label>
+            <p>2. ¿Cal é o principal modo de transmisión do COVID-19?</p>
+            <label><input type="radio" name="q2" value="a"> Contacto directo</label>
+            <label><input type="radio" name="q2" value="b"> Gotículas respiratorias</label>
+            <label><input type="radio" name="q2" value="c"> Aerosois</label>
+            <label><input type="radio" name="q2" value="d"> Vectores</label>
+            <label><input type="radio" name="q2" value="e"> Todas as anteriores</label>
         </div>
 
         <!-- Pregunta 3 -->
         <div class="question">
-            <p>3. ¿A partir de que fluxo é obrigatorio o uso de humidificación?</p>
-            <label><input type="radio" name="q3" value="a"> 1 L/min</label>
-            <label><input type="radio" name="q3" value="b"> 2 L/min</label>
-            <label><input type="radio" name="q3" value="c"> 4 L/min</label>
-            <label><input type="radio" name="q3" value="d"> 6 L/min</label>
-            <label><input type="radio" name="q3" value="e"> 10 L/min</label>
+            <p>3. ¿Cal é a duración recomendada do lavado de mans segundo a OMS?</p>
+            <label><input type="radio" name="q3" value="a"> 10 segundos</label>
+            <label><input type="radio" name="q3" value="b"> 20-30 segundos</label>
+            <label><input type="radio" name="q3" value="c"> 1 minuto</label>
+            <label><input type="radio" name="q3" value="d"> 2 minutos</label>
+            <label><input type="radio" name="q3" value="e"> Non é necesario</label>
         </div>
 
-        <!-- Pregunta 4 (Nova sobre manómetro) -->
+        <!-- Pregunta 4 -->
         <div class="question">
-            <p>4. ¿Que función principal ten o manómetro nun sistema de osixenoterapia?</p>
-            <label><input type="radio" name="q4" value="a"> Regular o fluxo de O₂ en L/min</label>
-            <label><input type="radio" name="q4" value="b"> Medir a presión do O₂ no cilindro</label>
-            <label><input type="radio" name="q4" value="c"> Humidificar o osíxeno antes da administración</label>
-            <label><input type="radio" name="q4" value="d"> Filtrar impurezas do O₂</label>
+            <p>4. ¿Cal é o tipo de máscara recomendada para o persoal sanitario en situacións de alto risco?</p>
+            <label><input type="radio" name="q4" value="a"> Máscara cirúrxica</label>
+            <label><input type="radio" name="q4" value="b"> Máscara FFP2</label>
+            <label><input type="radio" name="q4" value="c"> Máscara de tea</label>
+            <label><input type="radio" name="q4" value="d"> Máscara KN95</label>
             <label><input type="radio" name="q4" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 5 -->
         <div class="question">
-            <p>5. ¿Cada canto tempo se debe cambiar a auga do humidificador?</p>
-            <label><input type="radio" name="q5" value="a"> Cada 2 horas</label>
-            <label><input type="radio" name="q5" value="b"> Cada 8 horas</label>
-            <label><input type="radio" name="q5" value="c"> Cada 12 horas</label>
-            <label><input type="radio" name="q5" value="d"> Cada 24 horas</label>
-            <label><input type="radio" name="q5" value="e"> Semanalmente</label>
+            <p>5. ¿Cal é o principal risco nas ambulancias durante a pandemia de COVID-19?</p>
+            <label><input type="radio" name="q5" value="a"> Espazo reducido</label>
+            <label><input type="radio" name="q5" value="b"> Falta de ventilación</label>
+            <label><input type="radio" name="q5" value="c"> Pacientes asintomáticos</label>
+            <label><input type="radio" name="q5" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q5" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 6 -->
         <div class="question">
-            <p>6. ¿Cal destes é unha contraindicación para o uso de mochilas de O₂ líquido?</p>
-            <label><input type="radio" name="q6" value="a"> Uso en nenos</label>
-            <label><input type="radio" name="q6" value="b"> Temperaturas inferiores a 0°C</label>
-            <label><input type="radio" name="q6" value="c"> Exposición a fontes de calor</label>
-            <label><input type="radio" name="q6" value="d"> Pacientes con traqueostomía</label>
-            <label><input type="radio" name="q6" value="e"> Todas son correctas</label>
+            <p>6. ¿Cal é o principal obxectivo da cadea epidemiolóxica?</p>
+            <label><input type="radio" name="q6" value="a"> Identificar o patóxeno</label>
+            <label><input type="radio" name="q6" value="b"> Romper a transmisión</label>
+            <label><input type="radio" name="q6" value="c"> Aillamento do paciente</label>
+            <label><input type="radio" name="q6" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q6" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 7 -->
         <div class="question">
-            <p>7. ¿Que dispositivo permite unha FiO₂ do 60-100%?</p>
-            <label><input type="radio" name="q7" value="a"> Cánula nasal</label>
-            <label><input type="radio" name="q7" value="b"> Máscara simple</label>
-            <label><input type="radio" name="q7" value="c"> Máscara con reservorio</label>
-            <label><input type="radio" name="q7" value="d"> Máscara Venturi</label>
-            <label><input type="radio" name="q7" value="e"> Cánula transtraqueal</label>
+            <p>7. ¿Cal é o principal reservorio do virus da COVID-19?</p>
+            <label><input type="radio" name="q7" value="a"> Animais</label>
+            <label><input type="radio" name="q7" value="b"> Ser humano</label>
+            <label><input type="radio" name="q7" value="c"> Ambiente</label>
+            <label><input type="radio" name="q7" value="d"> Auga contaminada</label>
+            <label><input type="radio" name="q7" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 8 -->
         <div class="question">
-            <p>8. ¿Cal é o fluxo de O₂ recomendado para unha máscara Venturi do 35%?</p>
-            <label><input type="radio" name="q8" value="a"> 3 L/min</label>
-            <label><input type="radio" name="q8" value="b"> 6 L/min</label>
-            <label><input type="radio" name="q8" value="c"> 9 L/min</label>
-            <label><input type="radio" name="q8" value="d"> 12 L/min</label>
-            <label><input type="radio" name="q8" value="e"> 15 L/min</label>
+            <p>8. ¿Cal é a principal porta de saída do virus da COVID-19?</p>
+            <label><input type="radio" name="q8" value="a"> Respiratoria</label>
+            <label><input type="radio" name="q8" value="b"> Dixestiva</label>
+            <label><input type="radio" name="q8" value="c"> Cutánea</label>
+            <label><input type="radio" name="q8" value="d"> Xenitourinaria</label>
+            <label><input type="radio" name="q8" value="e"> Todas as anteriores</label>
         </div>
 
         <!-- Pregunta 9 -->
         <div class="question">
-            <p>9. ¿En que casos está indicada a humidificación térmica?</p>
-            <label><input type="radio" name="q9" value="a"> Cánula nasal a 2 L/min</label>
-            <label><input type="radio" name="q9" value="b"> Ventilación mecánica invasiva</label>
-            <label><input type="radio" name="q9" value="c"> Máscara simple a 5 L/min</label>
-            <label><input type="radio" name="q9" value="d"> Todos os casos anteriores</label>
-            <label><input type="radio" name="q9" value="e"> Ningún dos casos anteriores</label>
+            <p>9. ¿Cal é o principal modo de transmisión da tuberculose?</p>
+            <label><input type="radio" name="q9" value="a"> Contacto directo</label>
+            <label><input type="radio" name="q9" value="b"> Gotículas</label>
+            <label><input type="radio" name="q9" value="c"> Aerosois</label>
+            <label><input type="radio" name="q9" value="d"> Vectores</label>
+            <label><input type="radio" name="q9" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 10 -->
         <div class="question">
-            <p>10. ¿Cal é o risco principal de usar fluxos excesivos de O₂ en pacientes con EPOC?</p>
-            <label><input type="radio" name="q10" value="a"> Hipercapnia</label>
-            <label><input type="radio" name="q10" value="b"> Hipocapnia</label>
-            <label><input type="radio" name="q10" value="c"> Alcalose metabólica</label>
-            <label><input type="radio" name="q10" value="d"> Edema pulmonar</label>
-            <label><input type="radio" name="q10" value="e"> Neumotórax</label>
+            <p>10. ¿Cal é o principal factor de risco individual para as enfermidades infecciosas?</p>
+            <label><input type="radio" name="q10" value="a"> Idade</label>
+            <label><input type="radio" name="q10" value="b"> Inmunodepresión</label>
+            <label><input type="radio" name="q10" value="c"> Enfermidades crónicas</label>
+            <label><input type="radio" name="q10" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q10" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 11 -->
         <div class="question">
-            <p>11. ¿Que precaución é esencial no manexo de cilindros de O₂?</p>
-            <label><input type="radio" name="q11" value="a"> Almacenalos preto de fontes de calor</label>
-            <label><input type="radio" name="q11" value="b"> Usar lubricantes graxos nas conexións</label>
-            <label><input type="radio" name="q11" value="c"> Mantelos en posición horizontal</label>
-            <label><input type="radio" name="q11" value="d"> Evitar a exposición a chispas ou chamas</label>
-            <label><input type="radio" name="q11" value="e"> Todas son correctas</label>
+            <p>11. ¿Cal é o principal método de prevención das enfermidades infecciosas?</p>
+            <label><input type="radio" name="q11" value="a"> Vacinación</label>
+            <label><input type="radio" name="q11" value="b"> Lavado de mans</label>
+            <label><input type="radio" name="q11" value="c"> Uso de EPIs</label>
+            <label><input type="radio" name="q11" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q11" value="e"> Ningunha das anteriores</label>
         </div>
 
         <!-- Pregunta 12 -->
         <div class="question">
-            <p>12. ¿Cal é a duración máxima recomendada para os concentradores portátiles?</p>
-            <label><input type="radio" name="q12" value="a"> 1-2 horas</label>
-            <label><input type="radio" name="q12" value="b"> 2-4 horas</label>
-            <label><input type="radio" name="q12" value="c"> 6-8 horas</label>
-            <label><input type="radio" name="q12" value="d"> 12 horas</label>
-            <label><input type="radio" name="q12" value="e"> Non teñen límite temporal</label>
+            <p>12. ¿Cal é o principal risco do uso prolongado de luvas?</p>
+            <label><input type="radio" name="q12" value="a"> Dermatite de contacto</label>
+            <label><input type="radio" name="q12" value="b"> Alerxias</label>
+            <label><input type="radio" name="q12" value="c"> Hipersensibilidade</label>
+            <label><input type="radio" name="q12" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q12" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="question">
+            <p>13. ¿Cal é o principal obxectivo do illamento protector?</p>
+            <label><input type="radio" name="q13" value="a"> Protexer ao paciente</label>
+            <label><input type="radio" name="q13" value="b"> Protexer ao persoal sanitario</label>
+            <label><input type="radio" name="q13" value="c"> Evitar a propagación da enfermidade</label>
+            <label><input type="radio" name="q13" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q13" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="question">
+            <p>14. ¿Cal é o principal método de desinfección en ambulancias?</p>
+            <label><input type="radio" name="q14" value="a"> Alcohol 70%</label>
+            <label><input type="radio" name="q14" value="b"> Leixía diluída</label>
+            <label><input type="radio" name="q14" value="c"> Toalliñas desinfectantes</label>
+            <label><input type="radio" name="q14" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q14" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="question">
+            <p>15. ¿Cal é o principal risco dos residuos sanitarios biocontaminados?</p>
+            <label><input type="radio" name="q15" value="a"> Risco biolóxico</label>
+            <label><input type="radio" name="q15" value="b"> Risco químico</label>
+            <label><input type="radio" name="q15" value="c"> Risco radiolóxico</label>
+            <label><input type="radio" name="q15" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q15" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 16 -->
+        <div class="question">
+            <p>16. ¿Cal é o principal obxectivo da vacinación?</p>
+            <label><input type="radio" name="q16" value="a"> Previr enfermidades</label>
+            <label><input type="radio" name="q16" value="b"> Reducir a transmisión</label>
+            <label><input type="radio" name="q16" value="c"> Protexer aos grupos de risco</label>
+            <label><input type="radio" name="q16" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q16" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 17 -->
+        <div class="question">
+            <p>17. ¿Cal é o principal risco do uso incorrecto de EPIs?</p>
+            <label><input type="radio" name="q17" value="a"> Exposición a patóxenos</label>
+            <label><input type="radio" name="q17" value="b"> Contaminación cruzada</label>
+            <label><input type="radio" name="q17" value="c"> Infeccións nosocomiais</label>
+            <label><input type="radio" name="q17" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q17" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 18 -->
+        <div class="question">
+            <p>18. ¿Cal é o principal obxectivo da desinfección de superficies?</p>
+            <label><input type="radio" name="q18" value="a"> Reducir a carga microbiana</label>
+            <label><input type="radio" name="q18" value="b"> Previr a propagación de patóxenos</label>
+            <label><input type="radio" name="q18" value="c"> Protexer ao persoal sanitario</label>
+            <label><input type="radio" name="q18" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q18" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 19 -->
+        <div class="question">
+            <p>19. ¿Cal é o principal risco dos aerosois en espazos pechados?</p>
+            <label><input type="radio" name="q19" value="a"> Transmisión de enfermidades</label>
+            <label><input type="radio" name="q19" value="b"> Falta de ventilación</label>
+            <label><input type="radio" name="q19" value="c"> Exposición a patóxenos</label>
+            <label><input type="radio" name="q19" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q19" value="e"> Ningunha das anteriores</label>
+        </div>
+
+        <!-- Pregunta 20 -->
+        <div class="question">
+            <p>20. ¿Cal é o principal obxectivo da educación en hixiene?</p>
+            <label><input type="radio" name="q20" value="a"> Reducir a transmisión de enfermidades</label>
+            <label><input type="radio" name="q20" value="b"> Promover prácticas seguras</label>
+            <label><input type="radio" name="q20" value="c"> Protexer aos grupos de risco</label>
+            <label><input type="radio" name="q20" value="d"> Todas as anteriores</label>
+            <label><input type="radio" name="q20" value="e"> Ningunha das anteriores</label>
         </div>
 
         <div id="score" class="score"></div>
@@ -234,21 +310,29 @@
         }
 
         const respuestasCorrectas = {
-            "q1": "c",
-            "q2": "c",
-            "q3": "c", 
-            "q4": "b",  // Resposta correcta da nova pregunta 4
+            "q1": "e",
+            "q2": "b",
+            "q3": "b",
+            "q4": "b",
             "q5": "d",
-            "q6": "c",
-            "q7": "c",
-            "q8": "c",
-            "q9": "b",
-            "q10": "a",
+            "q6": "b",
+            "q7": "b",
+            "q8": "a",
+            "q9": "c",
+            "q10": "d",
             "q11": "d",
-            "q12": "b"
+            "q12": "d",
+            "q13": "d",
+            "q14": "d",
+            "q15": "a",
+            "q16": "d",
+            "q17": "d",
+            "q18": "d",
+            "q19": "d",
+            "q20": "d"
         };
 
-        let totalPreguntas = 12;
+        let totalPreguntas = 20;
         let puntaje = 0;
         let preguntasFalladas = [];
 
